@@ -104,18 +104,16 @@ int main(int argc, char const *argv[])
             }
         }
 
-        
         for (size_t i = 0; i < grid_size; i++)
         {
             for (size_t j = 0; j < line_len; j++)
             {
-                if(grid.at(i).at(j) == 'X'){
+                if (grid.at(i).at(j) == 'X')
+                {
                     grid.at(i).at(j) = '.';
                 }
             }
-            
         }
-        
 
     } while (last_removed != 0);
 
